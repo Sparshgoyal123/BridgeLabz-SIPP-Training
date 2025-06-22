@@ -1,6 +1,8 @@
-// Sam's marks in Maths is 94, Physics is 95 and Chemistry is 96 out of 100. Find the average percent mark in PCM
-// I/P => NONE
-// O/P => Sam's average mark in PCM is ______
+/*
+Write a program to find the age of harry if the birth year is 2000. assume the current year is 2024.
+I/P => NONE
+O/P => Harry's age in 2024 is___
+*/
 
 
 
