@@ -11,19 +11,16 @@ import java.util.*;
 
 public class MultiplicationTable {
     public static void main(String[] args) {
-        // Create Scanner object to take input from the user
         Scanner input = new Scanner(System.in);
 
-        // Take input for the number whose multiplication table is to be printed
         System.out.print("Enter a number to print its multiplication table: ");
         int number = input.nextInt();
 
-        // Define an array to store multiplication results from 1 to 10
         int[] table = new int[10];
 
         
         for (int i = 0; i < table.length; i++) {
-            table[i] = number * (i + 1); // store result of number * (i+1)
+            table[i] = number * (i + 1); 
         }
 
         
