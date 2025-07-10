@@ -1,0 +1,38 @@
+/*
+Create a program to print a multiplication table of a number.
+Hint => 
+a. Get an integer input and store it in the number variable. Also, define a integer array to store the results of multiplication from 1 to 1
+b. Run a loop from 1 to 10 and store the results in the multiplication table array
+c. Finally, display the result from the array in the format number * i = ___
+*/
+
+
+import java.util.*;
+
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        // Create Scanner object to take input from the user
+        Scanner input = new Scanner(System.in);
+
+        // Take input for the number whose multiplication table is to be printed
+        System.out.print("Enter a number to print its multiplication table: ");
+        int number = input.nextInt();
+
+        // Define an array to store multiplication results from 1 to 10
+        int[] table = new int[10];
+
+        
+        for (int i = 0; i < table.length; i++) {
+            table[i] = number * (i + 1); // store result of number * (i+1)
+        }
+
+        
+        System.out.println("\nMultiplication Table of " + number + ":");
+        for (int i = 0; i < table.length; i++) {
+            System.out.println(number + " * " + (i + 1) + " = " + table[i]);
+        }
+
+        
+        input.close();
+    }
+}
